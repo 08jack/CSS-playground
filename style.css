@@ -1,26 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-image: url('./images/bg.jpg');
+	background-size: contain;
+}
+
 h1 {
 	padding: 80px;
 	margin: 8px;
 }
 
-body {
+.content {
 	margin: 0px auto;
 	padding: 40px;
 	text-align: center;
 
-	background-color: rgb(3, 3, 3);
-
 	color: rgb(221, 221, 221);
+
+	/* this is needed or the background will be offset by a few pixels at the top */
+	filter: drop-shadow(5px 5px 1px black);
 }
 
 p {
 	margin: 16px auto;
-	width: 900px;
+	width: 650px;
 }
 
 a {
 	display: inline-block;
-	margin: auto 8px;
+	margin: 32px 8px;
 
 	color: orange;
 	text-decoration: none;
