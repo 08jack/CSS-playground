@@ -1,11 +1,8 @@
+/* setting everything to border-box */
 * {
 	box-sizing: border-box;
 }
 
-html {
-	background-image: url('./images/bg.jpg');
-	background-size: contain;
-}
 
 h1 {
 	padding: 80px;
@@ -17,10 +14,10 @@ h1 {
 	padding: 40px;
 	text-align: center;
 
-	color: rgb(221, 221, 221);
+	color: rgb(7, 7, 7);
 
 	/* this is needed or the background will be offset by a few pixels at the top */
-	filter: drop-shadow(5px 5px 1px black);
+	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.247));
 }
 
 p {
@@ -28,23 +25,29 @@ p {
 	width: 650px;
 }
 
-a {
+/* for links that need to display in a line */
+.links a {
 	display: inline-block;
 	margin: 32px 8px;
+}
 
-	color: orange;
+/* default link style */
+a {
+	color: rgb(238, 78, 4);
 	text-decoration: none;
 	font-weight: bold;
 
 	transition: transform .02s ease-in-out;
 }
 
+/* default link hover animation */
 a:hover {
 	text-decoration: underline;
 	
 	transform: scale(1.02);
 }
 
+/* rotation animation (for text and stuff) */
 .rotate {
 	animation: rotation 6s infinite ease-in-out;
 }
